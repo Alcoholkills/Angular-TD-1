@@ -14,7 +14,7 @@ import { SmallSquareComponent } from './components/big_square/small-square/small
     HeaderComponent,
     FooterComponent,
     BigSquareComponent,
-    SmallSquareComponent
+    SmallSquareComponent,
   ],
   imports: [
     BrowserModule,

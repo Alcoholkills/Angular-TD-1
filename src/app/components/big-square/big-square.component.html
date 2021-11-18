@@ -1,2 +1,7 @@
 
-<div id="big_square"></div>
+<div id="big_square">
+    <app-small-square (new_color)=send_color($event) [small_square_color]="'red'"></app-small-square>
+    <app-small-square (new_color)=send_color($event) [small_square_color]="'green'"></app-small-square>
+    <app-small-square (new_color)=send_color($event) [small_square_color]="'blue'"></app-small-square>
+    <app-small-square (new_color)=send_color($event) [small_square_color]="'yellow'"></app-small-square>
+</div>

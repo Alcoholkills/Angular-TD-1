@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-big-square',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BigSquareComponent implements OnInit {
 
+  @Input() received_square_color: string = '';
+  @Output() big_square_color: EventEmitter<string> = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  send_color(color:string) {
+    this.big_square_color.emit(color);
   }
 
 }

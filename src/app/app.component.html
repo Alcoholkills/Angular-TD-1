@@ -1,3 +1,5 @@
+<div [ngClass]=color>
 <app-header></app-header>
-<app-big-square></app-big-square>
+<app-big-square (big_square_color)=set_color($event)></app-big-square>
+</div>
 <app-footer></app-footer>

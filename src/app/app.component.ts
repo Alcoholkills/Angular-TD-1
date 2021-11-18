@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rambert-prenom-exo1';
+  public color: string = '';
+
+  public set_color(color:string) {
+    this.color = color;
+  }
 }
+
